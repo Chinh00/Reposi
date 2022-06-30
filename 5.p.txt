@@ -1,0 +1,19 @@
+n = int(input("n = "))
+
+
+a = 0
+b = 1
+
+def isFibo(n):
+    global a, b, c
+    c = a + b
+    a = b
+    b = c
+    if (a == n):
+        print(n, " la so fibonaci")
+        exit()
+    if a < n: isFibo(n)
+    else: 
+        print(n, " khong phai la so fibonaci")
+        exit()
+isFibo(n)
